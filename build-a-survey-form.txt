@@ -1,0 +1,65 @@
+** start of undefined **
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <h1 id="title">Survey Form</h1>
+    <p id="description">Please provide your feedback with this survey</p>
+    <form id="survey-form">
+     <fieldset> 
+      <label id="name-label">Full name: <input id="name" type="text" placeholder="Enter your full name" required> </label>
+      <label id="email-label">E-mail: <input id="email" type="email" placeholder="Enter your email" required> </label>
+      <label id="number-label">Age: <input id="number" type="number" min="18" max="120" placeholder="Years"> </label>
+      </fieldset>
+      <fieldset>
+        <label for="dropdown">How did you hear about us?<select id="dropdown" required>
+          <option value="">(select one)</option>
+          <option value="1">Search engine</option>
+          <option value="2">Friends</option>
+          <option value="3">Other</option>
+        </select></label>  
+      </fieldset>
+      <fieldset>
+        <legend>How was your experience?</legend>
+        <label><input type="radio" name="satisfied" value="Satisfied" checked>Satisfied</label>
+        <label><input type="radio" name="satisfied" value="unsatisfied">Unsatisfied</label>
+      </fieldset>
+      <fieldset>
+        <label>Would you come again? 
+        <input type="checkbox" value='Likely'>Likely
+        <input type="checkbox" value='Unlikely'>Unlikely
+        </label>
+      </fieldset>
+      <fieldset>
+        <label>Any suggestions?
+          <textarea placeholder='Please type here'></textarea>
+         </label>
+      </fieldset>
+      <fieldset>
+        <input type='submit' id='submit'>
+      </fieldset>  
+    </form>
+  </body>
+</html>
+
+** end of undefined **
+
+** start of undefined **
+
+body {
+  width: 100%;
+  height: 100vh;
+  margin: 0;
+  background-color: #1b3a32;
+  color: #f5f6f7;
+  font-family: Tahoma;
+  font-size: 16px;
+}
+
+** end of undefined **
+
